@@ -82,8 +82,10 @@ gpgcheck=1
 EOF
 
 yum makecache
+yum upgrade
 
 yum -y install net-tools
 yum -y install bash-completion
 yum -y install vim
-
+yum -y install wget
+wget https://mirrors.tuna.tsinghua.edu.cn/epel/RPM-GPG-KEY-EPEL-7 -P /etc/pki/rpm-gpg/
