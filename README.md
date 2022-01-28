@@ -6,4 +6,5 @@
 * 使用http方式 保证兼容性
 * 源来自清华大学开源软件镜像站 感谢TUNA提供
 * 安装以下常用包：net-tools bash-completion vim
-* 未完待续
+* 关闭SELinux
+* 关闭操蛋的bell提示音
