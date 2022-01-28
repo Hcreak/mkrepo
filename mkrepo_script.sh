@@ -89,3 +89,8 @@ yum -y install bash-completion
 yum -y install vim
 yum -y install wget
 wget https://mirrors.tuna.tsinghua.edu.cn/epel/RPM-GPG-KEY-EPEL-7 -P /etc/pki/rpm-gpg/
+
+setenforce 0
+sed -i "s#SELINUX=enforcing#SELINUX=disabled#g" /etc/selinux/config
+
+sed -i "s/#set bell-style none/set bell-style none/g" /etc/inputrc
