@@ -82,7 +82,7 @@ gpgcheck=1
 EOF
 
 yum makecache
-yum upgrade
+yum -y upgrade
 
 yum -y install net-tools
 yum -y install bash-completion
